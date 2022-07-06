@@ -58,7 +58,7 @@ abstract class Shape {
   }
 
   protected getSides(): number[] {
-    let sides = [];
+    let sides: number[] = [];
     this.points.forEach((point, index) => {
       if (index === (this.points.length - 1)) {
         sides.push(point.distance(this.points[0]));
